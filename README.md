@@ -47,10 +47,35 @@ redirect. Requests are rate limited per IP address. Nothing is stored beyond wha
 [privacy policy](https://internet-tools.net/privacy-policy) describes. Terms of use are in
 the [legal notice](https://internet-tools.net/legal-notice).
 
-## Without the plugin
+## Install it yourself
 
-Any MCP client that speaks streamable HTTP can use the URL above directly. Setup for each
-client is on [internet-tools.net/mcp-server](https://internet-tools.net/mcp-server).
+You don't need the plugin directory: the server URL is all a client needs (streamable
+HTTP, no account, no key).
+
+### Claude (web and desktop)
+
+Settings → Connectors → Add custom connector. Paste `https://internet-tools.net/mcp` and
+save.
+
+### Claude Code
+
+```bash
+claude mcp add --transport http internet-tools https://internet-tools.net/mcp
+```
+
+Start a new session afterwards; `/mcp` should list it as connected. The audit command is
+`/mcp__internet-tools__audit example.com`.
+
+### Cursor, VS Code and others
+
+Add it to the client's MCP configuration:
+
+```json
+{ "mcpServers": { "internet-tools": { "url": "https://internet-tools.net/mcp" } } }
+```
+
+Any client that speaks streamable HTTP works. The same instructions are on
+[internet-tools.net/mcp-server](https://internet-tools.net/mcp-server).
 
 ## License
 
