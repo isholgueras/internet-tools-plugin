@@ -3,7 +3,7 @@
   "mcpServers": {
     "internet-tools": {
       "type": "streamable-http",
-      "url": "https://internet-tools.net/mcp"
+      "url": "https://internet-tools-mcp.isholgueras.workers.dev/mcp"
     }
   }
 }
