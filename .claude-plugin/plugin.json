@@ -11,6 +11,8 @@
   "repository": "https://github.com/isholgueras/internet-tools-plugin",
   "license": "MIT",
   "privacyPolicyUrl": "https://internet-tools.net/privacy-policy",
+  "termsOfServiceUrl": "https://internet-tools.net/legal-notice",
+  "supportUrl": "https://github.com/isholgueras/internet-tools-plugin/issues",
   "keywords": ["dns", "email", "spf", "dkim", "dmarc", "whois", "tls", "security-headers"],
   "mcpServers": {
     "internet-tools": {
