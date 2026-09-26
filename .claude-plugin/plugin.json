@@ -10,6 +10,7 @@
   "homepage": "https://internet-tools.net/mcp-server",
   "repository": "https://github.com/isholgueras/internet-tools-plugin",
   "license": "MIT",
+  "privacyPolicyUrl": "https://internet-tools.net/privacy-policy",
   "keywords": ["dns", "email", "spf", "dkim", "dmarc", "whois", "tls", "security-headers"],
   "mcpServers": {
     "internet-tools": {
