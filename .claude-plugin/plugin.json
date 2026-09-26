@@ -1,0 +1,20 @@
+{
+  "name": "internet-tools",
+  "displayName": "Internet Tools",
+  "version": "1.0.0",
+  "description": "DNS, email authentication (SPF, DKIM, DMARC), mail blocklist, WHOIS, TLS certificate and HTTP security header checks against live public resolvers, with the fix for each finding.",
+  "author": {
+    "name": "Ignacio Sánchez",
+    "url": "https://internet-tools.net"
+  },
+  "homepage": "https://internet-tools.net/mcp-server",
+  "repository": "https://github.com/isholgueras/internet-tools-plugin",
+  "license": "MIT",
+  "keywords": ["dns", "email", "spf", "dkim", "dmarc", "whois", "tls", "security-headers"],
+  "mcpServers": {
+    "internet-tools": {
+      "type": "http",
+      "url": "https://internet-tools.net/mcp"
+    }
+  }
+}

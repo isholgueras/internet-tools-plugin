@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "internet-tools",
+  "version": "1.0.0",
+  "description": "DNS, email authentication (SPF, DKIM, DMARC), mail blocklist, WHOIS, TLS certificate and HTTP security header checks against live public resolvers, with the fix for each finding.",
+  "author": {
+    "name": "Ignacio Sánchez",
+    "url": "https://internet-tools.net"
+  },
+  "homepage": "https://internet-tools.net/mcp-server",
+  "repository": "https://github.com/isholgueras/internet-tools-plugin",
+  "license": "MIT",
+  "keywords": ["dns", "email", "spf", "dkim", "dmarc", "whois", "tls", "security-headers"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Internet Tools",
+        "shortDescription": "Check DNS, email authentication, blocklists and TLS",
+        "longDescription": "Looks up DNS records and propagation, DNSSEC, SPF/DKIM/DMARC, mail blocklists, WHOIS, TLS certificates and HTTP security headers against live public resolvers. Every finding comes with a level, a plain message and, where there is one, the fix. Read-only, no account.",
+        "developerName": "Ignacio Sánchez",
+        "category": "Developer Tools",
+        "capabilities": ["Read"],
+        "websiteURL": "https://internet-tools.net",
+        "privacyPolicyURL": "https://internet-tools.net/privacy-policy",
+        "termsOfServiceURL": "https://internet-tools.net/legal-notice",
+        "defaultPrompt": [
+          "Check SPF, DKIM and DMARC for example.com and tell me what to fix.",
+          "When does the certificate on example.com expire? Is the chain complete?"
+        ],
+        "brandColor": "#0D2347",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
