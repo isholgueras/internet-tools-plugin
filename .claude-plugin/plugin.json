@@ -17,7 +17,7 @@
   "mcpServers": {
     "internet-tools": {
       "type": "http",
-      "url": "https://internet-tools.net/mcp"
+      "url": "https://internet-tools-mcp.isholgueras.workers.dev/mcp"
     }
   }
 }

@@ -31,7 +31,7 @@ Try: "Check SPF, DKIM and DMARC for example.com and tell me what to fix."
 
 This plugin contains no code. It connects your assistant to one remote MCP server:
 
-    https://internet-tools.net/mcp
+    https://internet-tools-mcp.isholgueras.workers.dev/mcp
 
 The only data sent is what the assistant passes to a tool: a domain name, an IP address or
 a URL. The server then:
@@ -54,13 +54,13 @@ HTTP, no account, no key).
 
 ### Claude (web and desktop)
 
-Settings → Connectors → Add custom connector. Paste `https://internet-tools.net/mcp` and
+Settings → Connectors → Add custom connector. Paste `https://internet-tools-mcp.isholgueras.workers.dev/mcp` and
 save.
 
 ### Claude Code
 
 ```bash
-claude mcp add --transport http internet-tools https://internet-tools.net/mcp
+claude mcp add --transport http internet-tools https://internet-tools-mcp.isholgueras.workers.dev/mcp
 ```
 
 Start a new session afterwards; `/mcp` should list it as connected. The audit command is
@@ -71,7 +71,7 @@ Start a new session afterwards; `/mcp` should list it as connected. The audit co
 Add it to the client's MCP configuration:
 
 ```json
-{ "mcpServers": { "internet-tools": { "url": "https://internet-tools.net/mcp" } } }
+{ "mcpServers": { "internet-tools": { "url": "https://internet-tools-mcp.isholgueras.workers.dev/mcp" } } }
 ```
 
 Any client that speaks streamable HTTP works. The same instructions are on
